@@ -19,12 +19,12 @@ headers={
 'Referer':'https://www.szcredit.com.cn/XY2.OutSide/GSPT/ShowCheckCode.aspx',
 'User-Agent':'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
 }
-for _ in range(5):
+for _ in range(10000):
     try:
         r = requests.get(url,headers=headers)
     except Exception as e:
         print(e)
 
     else:
-        with open('{}.jpg'.format(_),'wb') as f:
+        with open('{}.png'.format(_),'wb') as f:
             f.write(r.content)
