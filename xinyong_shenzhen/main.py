@@ -266,8 +266,8 @@ def get_ent_name_failed():
         get_enterprise_info(name)
 
 def upload_redis():
-    user = 'yzplatform'
-    password = 'yzplatform'
+    user = '********'
+    password = '********'
     host = '10.18.6.105'
     port = 3306
     db = 'creditreport_sz'

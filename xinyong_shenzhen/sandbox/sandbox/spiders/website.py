@@ -32,8 +32,8 @@ class WebGetSpider(scrapy.Spider):
             'User-Agent': 'Mozilla/5.0(;WOW64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/67.0.3396.99Safari/537.36'
         }
         self.db=pymongo.MongoClient('10.18.6.26',27018)
-        user = 'yzplatform'
-        password = 'yzplatform'
+        user = '********'
+        password = '********'
         host = '10.18.6.105'
         port = 3306
         db = 'creditreport_sz'
